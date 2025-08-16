@@ -1,0 +1,101 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="0 .4 .7"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="black"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, regular"];
+	edge [arrowsize=.5, color="black", style="regular"]
+
+  n0 [label="Startgen...rithExpr"];
+  n1 [label="+"];
+  n1 [label="+"];
+  n2 [label="+"];
+  n2 [label="+"];
+  n3 [label="-"];
+  n3 [label="-"];
+  n4 [label="+"];
+  n4 [label="+"];
+  n5 [label="Factor"];
+  n5 [label="Factor"];
+  n6 [label="cos"];
+  n7 [label="("];
+  n8 [label="Factor"];
+  n8 [label="Factor"];
+  n9 [label="77"];
+  n10 [label=")"];
+  n11 [label="Factor"];
+  n11 [label="Factor"];
+  n12 [label="4"];
+  n13 [label="Factor"];
+  n13 [label="Factor"];
+  n14 [label="8"];
+  n15 [label="Factor"];
+  n15 [label="Factor"];
+  n16 [label="-"];
+  n17 [label="1"];
+  n18 [label="*"];
+  n18 [label="*"];
+  n19 [label="*"];
+  n19 [label="*"];
+  n20 [label="Factor"];
+  n20 [label="Factor"];
+  n21 [label="3"];
+  n22 [label="Factor"];
+  n22 [label="Factor"];
+  n23 [label="4"];
+  n24 [label="Factor"];
+  n24 [label="Factor"];
+  n25 [label="sin"];
+  n26 [label="("];
+  n27 [label="+"];
+  n27 [label="+"];
+  n28 [label="Factor"];
+  n28 [label="Factor"];
+  n29 [label="1"];
+  n30 [label="*"];
+  n30 [label="*"];
+  n31 [label="Factor"];
+  n31 [label="Factor"];
+  n32 [label="3"];
+  n33 [label="Factor"];
+  n33 [label="Factor"];
+  n34 [label="4"];
+  n35 [label=")"];
+
+  n0 -> n1 // "Startgen...rithExpr" -> "+"
+  n1 -> n2 // "+" -> "+"
+  n2 -> n3 // "+" -> "-"
+  n3 -> n4 // "-" -> "+"
+  n4 -> n5 // "+" -> "Factor"
+  n5 -> n6 // "Factor" -> "cos"
+  n5 -> n7 // "Factor" -> "("
+  n5 -> n8 // "Factor" -> "Factor"
+  n8 -> n9 // "Factor" -> "77"
+  n5 -> n10 // "Factor" -> ")"
+  n4 -> n11 // "+" -> "Factor"
+  n11 -> n12 // "Factor" -> "4"
+  n3 -> n13 // "-" -> "Factor"
+  n13 -> n14 // "Factor" -> "8"
+  n2 -> n15 // "+" -> "Factor"
+  n15 -> n16 // "Factor" -> "-"
+  n15 -> n17 // "Factor" -> "1"
+  n1 -> n18 // "+" -> "*"
+  n18 -> n19 // "*" -> "*"
+  n19 -> n20 // "*" -> "Factor"
+  n20 -> n21 // "Factor" -> "3"
+  n19 -> n22 // "*" -> "Factor"
+  n22 -> n23 // "Factor" -> "4"
+  n18 -> n24 // "*" -> "Factor"
+  n24 -> n25 // "Factor" -> "sin"
+  n24 -> n26 // "Factor" -> "("
+  n24 -> n27 // "Factor" -> "+"
+  n27 -> n28 // "+" -> "Factor"
+  n28 -> n29 // "Factor" -> "1"
+  n27 -> n30 // "+" -> "*"
+  n30 -> n31 // "*" -> "Factor"
+  n31 -> n32 // "Factor" -> "3"
+  n30 -> n33 // "*" -> "Factor"
+  n33 -> n34 // "Factor" -> "4"
+  n24 -> n35 // "Factor" -> ")"
+
+}
