@@ -1,0 +1,19 @@
+#include <io>
+#include <vector>
+#include <String>
+using namespace std;
+class Student{
+private:
+int ID;
+String firstName;
+String lastName;
+float GPA;
+public:
+void getInfo(){
+}
+};
+int main(){
+Object obj(22, "Zeyad");
+std1.getInfo();
+return 0;
+}

@@ -1,0 +1,15 @@
+#include <io>
+#include <vector>
+#include <String>
+using namespace std;
+class Student{
+private:
+int ID;
+public:
+void getInfo(){
+}
+};
+int main(){
+std1.getInfo();
+return 0;
+}

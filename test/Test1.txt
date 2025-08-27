@@ -1,0 +1,9 @@
+#include <io>
+using namespace std;
+class a{
+private:
+public:
+};
+int main(){
+return 0;
+}

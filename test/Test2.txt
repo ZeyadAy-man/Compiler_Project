@@ -1,0 +1,12 @@
+#include <io>
+using namespace std;
+class a{
+private:
+public:
+double x(){
+return a;
+}
+};
+int main(){
+return 0;
+}
